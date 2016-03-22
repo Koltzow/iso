@@ -18,18 +18,14 @@
 <body>
 
 	<div id="game"></div>
+	<div id="game2"></div>
 
-	<!-- JAVASCRIPT -->
 	<!-- MODULES -->
-	<script src="../lib/shape.js" type="text/javascript"></script>
 	<script src="../lib/world.js" type="text/javascript"></script>
+	<script src="../lib/shape.js" type="text/javascript"></script>
 	<script src="../lib/keyboard.js" type="text/javascript"></script>
-	<script src="../lib/mouse.js" type="text/javascript"></script>
 	<script src="../lib/physics.js" type="text/javascript"></script>
 	<script src="../lib/camera.js" type="text/javascript"></script>
-	<script src="../lib/sun.js" type="text/javascript"></script>
-	<!-- LIBRARY -->
-	<script src="../lib/iso.js" type="text/javascript"></script>
 	<!-- GAME -->
 	<script src="game.js" type="text/javascript"></script>
 

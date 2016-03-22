@@ -18,24 +18,16 @@ Then include the modules and library right before your `</body>`.
 
 ```
 
-Before you start you can renamespace the modules to simplify your code.
-
-```javascript
-var World = ISO.World,
-	Shape = ISO.Shape,
-	Camera = ISO.Camera;
-```
-
 Next we instantiate the world
 
 ```javascript
-var world = World.create(document.getElementById('game'), {
+var world = new World(document.getElementById('game'), {
 	fullscreen: true,
 	autoresize: true,
 	bounds: [20, 20],
 	showBounds: true,
-	physics: Physics,
-	camera: Camera,
+	physics: new Physics(),
+	camera: new Camera(),
 	fps: 60
 });
 ```
@@ -43,10 +35,10 @@ var world = World.create(document.getElementById('game'), {
 Let add a player object to the world. We will make a 2 block high cube and make it blue.
 
 ```javascript
-var player = world.add(Shape.cube({
+var player = world.add(new Shape.cube({
 	scale: {
 		x: 1, 
-		y: 2,
+		y: 1,
 		z: 1
 	},
 	color: '#00aaff'
