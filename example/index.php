@@ -21,11 +21,12 @@
 	<div id="game2"></div>
 
 	<!-- MODULES -->
-	<script src="../lib/world.js" type="text/javascript"></script>
 	<script src="../lib/shape.js" type="text/javascript"></script>
 	<script src="../lib/keyboard.js" type="text/javascript"></script>
 	<script src="../lib/physics.js" type="text/javascript"></script>
 	<script src="../lib/camera.js" type="text/javascript"></script>
+	<script src="../lib/world.js" type="text/javascript"></script>
+	
 	<!-- GAME -->
 	<script src="game.js" type="text/javascript"></script>
 

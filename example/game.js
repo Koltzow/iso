@@ -1,12 +1,9 @@
+//create keyboard
+var keyboard = new Keyboard();
+
 //create world
 var world = new World(document.getElementById('game'), {
-	fullscreen: true,
-	autoresize: true,
-	bounds: [20, 20],
-	showBounds: true,
-	physics: new Physics(),
-	camera: new Camera(),
-	fps: 60
+	showBounds: true
 });
 
 //create player
@@ -14,7 +11,7 @@ var player = world.add(new Shape.cube({
 	scale: {
 		x: 1, 
 		y: 1,
-		z: 1
+		z: 2
 	},
 	color: '#00aaff'
 }));
@@ -32,19 +29,19 @@ player.update = function () {
 		speedY = 0;
 
 	//left
-	if(Keyboard.isPressed(37)) speedX -= walkingspeed;
+	if(keyboard.isPressed(37)) speedX -= walkingspeed;
 		
 	//up
-	if(Keyboard.isPressed(38)) speedY += walkingspeed;
+	if(keyboard.isPressed(38)) speedY += walkingspeed;
 	
 	//right
-	if(Keyboard.isPressed(39)) speedX += walkingspeed;
+	if(keyboard.isPressed(39)) speedX += walkingspeed;
 	
 	//down
-	if(Keyboard.isPressed(40)) speedY -= walkingspeed;
+	if(keyboard.isPressed(40)) speedY -= walkingspeed;
 	
 	//jump
-	if(Keyboard.isPressed(32) && player.position.z == 0) player.velocity.z = 1;
+	if(keyboard.isPressed(32) && player.position.z == 0) player.velocity.z = 1;
 		
 	if(speedX) player.velocity.x = speedX;
 	if(speedY) player.velocity.y = speedY;
