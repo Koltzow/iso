@@ -11,7 +11,6 @@ Then include the modules and library right before your `</body>`.
 ```html
 <!-- MODULES -->
 <script src="../lib/shape.js" type="text/javascript"></script>
-<script src="../lib/physics.js" type="text/javascript"></script>
 <script src="../lib/camera.js" type="text/javascript"></script>
 <script src="../lib/world.js" type="text/javascript"></script>
 ```
@@ -24,17 +23,10 @@ var world = new World(document.getElementById('game'), {
 });
 ```
 
-Let add a player object to the world. We will make a 2 block high cube and make it blue.
+Let add a player object to the world.
 
 ```javascript
-var player = world.add(new Shape.cube({
-	scale: {
-		x: 1, 
-		y: 1,
-		z: 2
-	},
-	color: '#00aaff'
-}));
+var player = world.add(new Shape('cube'));
 ```
 
 Then we can start the game
