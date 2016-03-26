@@ -1,20 +1,18 @@
 //create keyboard
 var keyboard = new Keyboard();
 
+var camera = new Camera({
+	scrollable: true
+});
+
 //create world
 var world = new World(document.getElementById('game'), {
-	showBounds: true
+	showBounds: true,
+	camera: camera
 });
 
 //create player
-var player = world.add(new Shape.cube({
-	scale: {
-		x: 1, 
-		y: 1,
-		z: 2
-	},
-	color: '#00aaff'
-}));
+var player = world.add(new Shape('cube'));
 
 //tell camera to follow player
 world.camera.follow(player);
