@@ -12,10 +12,12 @@ var world = new World(document.getElementById('game'), {
 });
 
 //create player
-var player = world.add(new Shape('cube'));
+var player = world.add(new Shape('pyramid'));
+player.setPositionX(5);
+camera.follow(player);
 
-//tell camera to follow player
-world.camera.follow(player);
+var cube = world.add(new Shape('cube'));
+cube.setPositionX(-5);
 
 //set walking speed
 var walkingspeed = 0.2;

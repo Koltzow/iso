@@ -21,6 +21,7 @@
 
 	<!-- MODULES -->
 	<script src="../lib/shape.js" type="text/javascript"></script>
+	<script src="../lib/sun.js" type="text/javascript"></script>
 	<script src="../lib/keyboard.js" type="text/javascript"></script>
 	<script src="../lib/camera.js" type="text/javascript"></script>
 	<script src="../lib/world.js" type="text/javascript"></script>

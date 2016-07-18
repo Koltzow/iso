@@ -2,6 +2,16 @@
 
 Here is the change log for the isojs library.
 
+## 0.0.2
+
+### Added
+* Started adding rigibody
+* Started adding real 3D shape support
+
+### Fixed
+* Bug in sun class
+* Bug in shape class
+
 ## 0.0.1
 
 ### Added
